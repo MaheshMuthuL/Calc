@@ -37,26 +37,31 @@ Calculator.html
     <link rel="stylesheet" type="text/css" href="calculator.css">
 </head>
 <body>
-<h1>Mahesh Muthu (212222040093)</h1>
+<center>
+<h3>L.Mahesh Muthu (212222040093)</h3>
+</center>
 <div class="calculator">
     <input type="text" id="display" readonly>
+    <input type="button" value="(" onclick="addToDisplay('(')">
+    <input type="button" value=")" onclick="addToDisplay(')')">
+    <input type="button" value="C" onclick="clearDisplay()">
+    <input type="button" value="%" onclick="addToDisplay('%')">
     <input type="button" value="7" onclick="addToDisplay('7')">
     <input type="button" value="8" onclick="addToDisplay('8')">
     <input type="button" value="9" onclick="addToDisplay('9')">
-    <input type="button" value="/" onclick="addToDisplay('/')">
+    <input type="button" value="*" onclick="addToDisplay('*')">
     <input type="button" value="4" onclick="addToDisplay('4')">
     <input type="button" value="5" onclick="addToDisplay('5')">
     <input type="button" value="6" onclick="addToDisplay('6')">
-    <input type="button" value="*" onclick="addToDisplay('*')">
+    <input type="button" value="-" onclick="addToDisplay('-')">
     <input type="button" value="1" onclick="addToDisplay('1')">
     <input type="button" value="2" onclick="addToDisplay('2')">
     <input type="button" value="3" onclick="addToDisplay('3')">
-    <input type="button" value="-" onclick="addToDisplay('-')">
+    <input type="button" value="+" onclick="addToDisplay('+')">
     <input type="button" value="0" onclick="addToDisplay('0')">
     <input type="button" value="." onclick="addToDisplay('.')">
+    <input type="button" value="/" onclick="addToDisplay('/')">
     <input type="button" value="=" onclick="calculate()">
-    <input type="button" value="+" onclick="addToDisplay('+')">
-    <input type="button" value="C" onclick="clearDisplay()">
 </div>
 
 <script src="calculator.js"></script>
@@ -64,33 +69,35 @@ Calculator.html
 </body>
 </html>
 
-
 calculator.css
 
-.calculator {
+.calculator 
+{
     width: 220px;
     margin: 0 auto;
     border: none;
     border-radius: 15px;
     padding: 10px;
-    background-color: #170f0f;
+    background-color: #ba8b15;
     display: grid;
     grid-template-columns: repeat(4, 50px);
     grid-gap: 5px;
 }
 
-input[type="button"] {
+input[type="button"] 
+{
     width: 50px;
     padding: 10px;
     font-size: 18px;
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    background-color: #5717ac;
-    color: rgb(196, 37, 37);
+    background-color: #d1ebe4;
+    color: rgb(123, 17, 17);
 }
 
-input[type="text"] {
+input[type="text"] 
+{
     grid-column: span 4;
     padding: 10px;
     font-size: 18px;
@@ -98,20 +105,22 @@ input[type="text"] {
     border-radius: 15px;
 }
 
-
 calculator.js
 
-function addToDisplay(value) {
+function addToDisplay(value) 
+{
     document.getElementById('display').value += value;
 }
 
-function calculate() {
+function calculate() 
+{
     var expression = document.getElementById('display').value;
     var result = eval(expression);
     document.getElementById('display').value = result;
 }
 
-function clearDisplay() {
+function clearDisplay() 
+{
     document.getElementById('display').value = '';
 }
 
