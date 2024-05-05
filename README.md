@@ -122,8 +122,7 @@ function clearDisplay() {
 
 ## OUTPUT:
 
-![alt text](<Screenshot (321).png>)
-![alt text](<Screenshot (322).png>)
-
+![alt text](<Screenshot (323).png>)
+![alt text](<Screenshot (324).png>)
 ## RESULT:
 The program for designing a standard calculator using HTML and CSS is executed successfully.

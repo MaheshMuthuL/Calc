@@ -1,27 +1,30 @@
-.calculator {
+.calculator 
+{
     width: 220px;
     margin: 0 auto;
     border: none;
     border-radius: 15px;
     padding: 10px;
-    background-color: #170f0f;
+    background-color: #ba8b15;
     display: grid;
     grid-template-columns: repeat(4, 50px);
     grid-gap: 5px;
 }
 
-input[type="button"] {
+input[type="button"] 
+{
     width: 50px;
     padding: 10px;
     font-size: 18px;
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    background-color: #5717ac;
-    color: rgb(196, 37, 37);
+    background-color: #d1ebe4;
+    color: rgb(123, 17, 17);
 }
 
-input[type="text"] {
+input[type="text"] 
+{
     grid-column: span 4;
     padding: 10px;
     font-size: 18px;
